@@ -235,3 +235,14 @@ section.kanban h2 {
   flex-direction: column;
   gap: 2.4rem
 }
+
+/*Cortar linhas com CSS*/
+.with-css {
+  width: 120px;
+}
+
+.with-css p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
