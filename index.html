@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGS BI - Kanban</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./assets/favicon.ico">
+</head>
+
+<body>
+
+  <div id="app">
+    <!--Menu Vertical-->
+    <nav>
+
+      <a href="index.html">
+        <img src="./assets/logoags.jpg" alt="Logo do Site">
+      </a>
+
+      <!--Itens do menu-->
+      <ul>
+        <li>
+          <a href="index.html" class="active">
+            <ion-icon name="tablet-portrait"></ion-icon>
+            Boards
+          </a>
+        </li>
+
+        <li>
+          <a href="equipes.html">
+            <ion-icon name="people"></ion-icon>
+            Equipes
+          </a>
+        </li>
+
+        <li>
+          <a href="relatorios.html">
+            <ion-icon name="document-text"></ion-icon>
+            Relatórios
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <ion-icon name="cog"></ion-icon>
+            Ajustes
+          </a>
+        </li>
+      </ul>
+    </nav> 
+
+    <!--Conteúdo-->
+    <main>
+      <div class="inner">
+
+        <!--Titulo do conteúdo-->
+        <section class="title-avatar">
+          <h1>Kanban <img src="assets/pencil.svg" alt=""></h1>
+          <img src="https://github.com/brunoNreiss.png" alt="avatar">
+        </section>
+
+        <!--Filtro do conteúdo-->
+        <section class="filter">
+
+          <!--Botão filtrar-->
+          <button>
+            <ion-icon name="filter-outline"></ion-icon>
+            <span>Filtrar</span>
+          </button>
+
+          <!--Campo de busca-->
+          <div class="input-wrapper">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="text" placeholder="Busque por cards, assuntos ou responsáveis">
+          </div>
+        </section>
+
+        <!--Section Kanban-->
+        <section class="kanban with-js">
+
+          <!-- Inicio a Fazer-->
+          <div class="todo">
+            <h2>A fazer</h2>
+
+            <div class="cards">
+
+              <div class="card">
+                <h3>Dashboard ATIVOS AGS GRUPO1</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, maiores. Laboriosam unde
+                  delectus omnis corrupti tenetur modi odit vero numquam repudiandae, quos asperiores nesciunt, neque
+                  debitis accusantium eveniet dolore cupiditate.
+                </p>
+                <div class="tags">
+                  <span>AGS Grupo1</span>
+                  <span>Dashboard</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3>Dashboard ATIVOS AGS GRUPOC</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias inventore itaque nisi officia
+                  consequuntur repudiandae eius voluptatem tempore quisquam labore nulla hic esse, laudantium, maxime
+                  earum ducimus exercitationem corporis beatae?
+                </p>
+                <div class="tags">
+                  <span>AGS Grupo1</span>
+                  <span>Dashboard</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3>Planilha de Estratégia GERU</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sit voluptatem tempore expedita!
+                  Molestiae itaque amet officia rerum ab quaerat harum sunt officiis voluptatibus. Animi est repellendus
+                  nemo labore quos.
+                </p>
+                <div class="tags">
+                  <span>Geru</span>
+                  <span>Rebel</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!--Fim a fazer-->
+
+          <!-- Inicio Fazendo-->
+          <div class="doing">
+            <h2>Em andamento</h2>
+
+            <div class="cards">
+
+              <div class="card">
+                <h3>Encarreiramento Banestes</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo ab minus aperiam, magnam beatae qui
+                  sapiente dolore expedita numquam rem laborum, maxime accusamus, laboriosam reprehenderit nam ipsa
+                  corrupti? Officia, odio.
+                </p>
+                <div class="tags">
+                  <span>Bandes/Banestes</span>
+                  <span>Encarreiramento</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3>Encarreiramento AVANT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nemo illum, dignissimos suscipit
+                  provident ab, vitae et eligendi amet esse reprehenderit odit ullam quia, sint sed at a voluptates
+                  molestiae.
+                </p>
+                <div class="tags">
+                  <span>AVANT</span>
+                  <span>Encarreiramento</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3>Encarreiramento CCB Financeira</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit consectetur, quisquam
+                  dolor deserunt eveniet iste provident similique modi? Dolor dolorem velit animi! Hic, dignissimos
+                  tempore rerum repellat nisi asperiores?
+                </p>
+                <div class="tags">
+                  <span>CCB</span>
+                  <span>Encarreiramento</span>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+          <!--Fim Fazendo-->
+
+          <!--Inicio Feito-->
+          <div class="done">
+            <h2>Concluído</h2>
+
+            <div class="cards">
+              <div class="card">
+                <h3>Encarreiramento ATIVOS AGS GRUPOC</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt a, molestiae quos necessitatibus
+                  laborum id ipsum natus recusandae dolore molestias alias beatae delectus similique doloribus
+                  perferendis. Recusandae, fugiat ducimus. Quae!
+                </p>
+                <div class="tags">
+                  <span>CCB</span>
+                  <span>Encarreiramento</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3>Encarreiramento AVANT</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iure itaque rerum. Dolorum,
+                  distinctio nobis! Nam dolores rerum doloribus aliquam. Excepturi culpa deleniti dolore repellat velit
+                  recusandae laborum impedit vitae?
+                </p>
+                <div class="tags">
+                  <span>CCB</span>
+                  <span>Encarreiramento</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <h3>Encarreiramento GERU</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolores, vero quam error ipsam
+                  aliquid maiores corporis accusamus impedit in consequatur iusto, asperiores quo eius corrupti ipsa
+                  repellendus dignissimos amet.
+                </p>
+                <div class="tags">
+                  <span>CCB</span>
+                  <span>Encarreiramento</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Fim feito-->
+
+        </section>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="with-js.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
