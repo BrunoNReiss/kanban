@@ -232,6 +232,10 @@ section.kanban h2 {
   background: var(--blue);
   border-radius: .8rem;
   padding: .4rem .8rem;
+
+  /*Importante colocar min, para ter espaco pro drop de card*/
+  min-width: 282px;
+  min-height: 200px;
 }
 
 .cards {
