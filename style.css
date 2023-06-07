@@ -232,17 +232,55 @@ section.kanban h2 {
   background: var(--blue);
   border-radius: .8rem;
   padding: .4rem .8rem;
-
-  /*Importante colocar min, para ter espaco pro drop de card*/
-  min-width: 282px;
-  min-height: 200px;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 2.4rem
+  gap: 2.4rem;
+  /*Importante colocar min, para ter espaco pro drop de card*/
+  min-width: 282px;
+  min-height: 1000px;
 }
+
+.status {
+  width: 30px;
+  height: 8px;
+  background: gray;
+  margin-bottom: 16px;
+  border: 8px;
+}
+
+.status.green {
+  background: #008000;
+}
+
+.status.yellow {
+  background: #FFFF00;
+}
+
+.status.blue {
+  background: #33adf3;
+}
+
+.highlight {
+  background-color: #FD951F08;
+}
+
+.is-dragging {
+  cursor: move;
+  opacity: 0.3;
+}
+
+.over {
+  /*background-color: #4cd137*/
+}
+
+.card,
+.cards {
+  transition: all 400ms;
+}
+
 
 /*Cortar linhas com CSS*/
 .with-css {
