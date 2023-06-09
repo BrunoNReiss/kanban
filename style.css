@@ -265,6 +265,8 @@ section.kanban h2 {
 
 .highlight {
   background-color: #FD951F08;
+  border: 3px solid var(--blue-light);
+  border-radius: 5px;
 }
 
 .is-dragging {
